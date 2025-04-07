@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>📚Student Library Login Portal</title>
+  
+</head>
+<body>
+
+  <div class="container">
+    <input type="checkbox" id="toggle">
+
+    <div class="aswin">
+      <div class="login-form">
+        <h2>Student Library Login</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="student-id">Student Mail-ID</label>
+            <input type="text" id="student-id" name="student-Mail id" placeholder="Enter your Student Mail-ID" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" placeholder="Enter your Password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="aswinn">
+          Don't have an account? <label for="toggle">Sign Up</label>
+        </div>
+        <p class="footer-text">© BIT STUDENTS DATABASE</p>
+      </div>
+
+    
+      <div class="jack">
+        <h2>Student Sign Up</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="new-id">Student ID</label>
+            <input type="text" id="new-id" name="new-id" placeholder="Choose a Student ID" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" name="signup-password" placeholder="Create a Password" required>
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <div class="aswinn">
+          Already have an account? <label for="toggle">Login</label>
+        </div>
+        <p class="footer-text">© BIT STUDENTS DATABASE</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Segoe UI',Tahoma,sans-serif;
+    }
+
+    body 
+    {
+      background-image:url('https://www.bitsathy.ac.in/wp-content/uploads/2022/09/learning-centre-2.webp');
+      background-size:cover;
+      background-position:center;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .container 
+    {
+      position:relative;
+      width:100%;
+      max-width:400px;
+      background-color:rgba(255, 255, 255, 0.95);
+      padding:40px 30px;
+      border-radius:16px;
+      box-shadow:0 8px 20px;
+    }
+
+    input[type="checkbox"] 
+    {
+      display:none;
+    }
+
+    .aswin 
+    {
+      transition:0.5s ease;
+    }
+
+    .jack
+    {
+      display:none;
+    }
+
+    #toggle:checked ~ .aswin .login-form 
+    {
+      display:none;
+    }
+
+    #toggle:checked ~ .aswin .jack 
+    {
+      display:block;
+    }
+
+    .login-form, .jack
+    {
+      animation:fadeIn 0.4s ease;
+    }
+
+    
+
+    h2 
+    {
+      text-align:center;
+      margin-bottom:25px;
+      color:#333;
+    }
+
+    .form-group
+    {
+      margin-bottom:15px;
+    }
+
+    label 
+    {
+      display:block;
+      font-weight:600;
+      margin-bottom:6px;
+      color:#444;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]
+    {
+      width:100%;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      transition:0.3s ease;
+    }
+
+    input:focus 
+    {
+      border-color:#4facfe;
+      outline:none;
+    }
+
+    .btn
+    {
+      width:100%;
+      padding:12px;
+      background-color:#4facfe;
+      color:#fff;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:background 0.3s ease;
+      margin-top:10px;
+    }
+
+    .btn:hover 
+    {
+      background-color:#00c6ff;
+    }
+
+    .aswinn 
+    {
+      text-align:center;
+      margin-top:15px;
+      font-size:14px;
+    }
+
+    .toggle-link label 
+    {
+      color:#007bff;
+      cursor:pointer;
+      text-decoration:none;
+    }
+
+    .toggle-link label:hover {
+      text-decoration:underline;
+    }
+
+    .footer-text {
+      margin-top:20px;
+      text-align:center;
+      color:#777;
+      font-size:13px;
+    }
+  </style>
